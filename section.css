@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+.secao1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: o auto;
+    margin-bottom: 80px;
+}
+
+.secao1 img{
+    max-width: 100%;
+    display: block;
+}
+
+.secao1 div{
+    margin: 10px; /*Espaçamento das margens (em voltda da página) */
+    flex: 1 1 200px; /* */
+}
+
+.secao2 {
+    text-align: center;
+    background-color: red;
+    color: white;
+}
