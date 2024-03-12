@@ -1,5 +1,30 @@
-h1{
-    text-align: center;
+/* Configurações iniciais */
+
+*{ /* Esse início com asterisco serve pra definir o site inteiro, title, header, body, footer e etc... */
+    margin: 0; /* esse elemento serve para zerar a margem que ja vem pré-definida*/
+    padding: 0px; /* zerar o que já vem pré-definido*/
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a { /* Chamamos a nossa Tag a (Que está dentro do Header para estilização */
+    text-decoration: none; /* Desabilitar o sublinhado embaixo do texto e, questão, porque a tag a já traz o sublinhado automaticamente */
+    color: white;/* alterando a cor do texto em questão par branco*/
+}
+
+.header > i {
+    font-size: 100px;
+    color: red;
+}
+
+.header { /* Aqui estamos chamando nossa class do cabeçalho para estilização */
+    display: flex; /* Responsável por alinhar os itens um ao lado do outro dentro do header*/
+    justify-content: space-between; /* Responsável por espaçar os itens (início e fim) */
+    padding: 60px; /* Preenchimento do nosso cabeçalho, ou seja, o tamanho que ficará o Header*/
+    align-items: center; /* Alinhar os itens ao centro */
+    flex-wrap: wrap; /* Aqui informamos que os itens podem "quebrar" para se adaptarem às telas menores */
+    background-color: aqua;
 }
 
 .secao1{
@@ -22,6 +47,45 @@ h1{
 
 .secao2 {
     text-align: center;
+    height: 150px;
     background-color: red;
+    color: black;
+    padding: 30px;
+}
+
+.rodape {
+    background-color: rgb(111, 43, 221);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.list-rodape {
+    display: flex;
+}
+
+.list-rodape li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+.list-rodape li a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.list-rodape a:hover {
     color: white;
+    transition: 1s;
+}
+
+.rodape i {
+    color: aqua;
+    font-size: 25px;
+    background-color: black;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
 }
