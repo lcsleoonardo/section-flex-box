@@ -24,7 +24,32 @@ a { /* Chamamos a nossa Tag a (Que está dentro do Header para estilização */
     padding: 60px; /* Preenchimento do nosso cabeçalho, ou seja, o tamanho que ficará o Header*/
     align-items: center; /* Alinhar os itens ao centro */
     flex-wrap: wrap; /* Aqui informamos que os itens podem "quebrar" para se adaptarem às telas menores */
-    background-color: aqua;
+    background-color: aqua; /* Alteramos a cor de fundo do cabeçalho*/
+}
+
+.list { /* Aqui chamamos a nossa class que está dentro da lista ñ ordenada para estilização */
+    display: flex; /* Usamos para habilitar os itens da lista um ao lado do outro */
+}
+
+.list > li { /* Chamamos diretamente nossas LI para estilização mais específica*/
+    margin-left: 10px; /* Espaçamento entre elas*/
+}
+
+.list > li > a {
+    display: block;
+    padding: 10px; /* Espaçamento dentro da caixa */
+    background: rgb(103, 184, 235);
+    color: black;
+}
+
+h1 { /* Título usado pós o Header*/
+    text-align: center; /* Alinhamos ao centro*/
+    margin-top: 50px; /* Espaçamento na margem superior */
+}
+
+img {
+    max-width: 100%; /* Adaptação máxima da imagem na página. */
+    display: block; /* */
 }
 
 .secao1{
@@ -42,23 +67,32 @@ a { /* Chamamos a nossa Tag a (Que está dentro do Header para estilização */
 
 .secao1 div{
     margin: 10px; /*Espaçamento das margens (em voltda da página) */
-    flex: 1 1 200px; /* */
+    flex: 1 1 200px; /* é um atalho para flex-grow, flex-shrink, flex-basis. Vale ressaltar que o elemento pai precisa ser flex (display: flexx). */
+
+    /* Flex-grow = ajuda os elementos (tamanho), dentro do container. Ele por si só inicia com 0, por isso colocamos 1 ou algum outro valor. */
+
+    /* Flex-shrink = vai determinar a capacidade dos elementos se ajustarem dentro do container (alturas do elemento). O valor padrão dele é = 1. */
+}
+
+.secao1 > div {
+    flex: 1, 1, 200;
+    margin: 10px; /* Espaçamento das margens laterais, superior e inferior. */
 }
 
 .secao2 {
     text-align: center;
-    height: 150px;
     background-color: red;
     color: black;
-    padding: 30px;
+    padding: 60px;
 }
 
 .rodape {
-    background-color: rgb(111, 43, 221);
-    padding: 30px;
-    display: flex;
+    display: flex; /* Responsável por alinhar os itens um ao lado do outro dentro do footer. */
     justify-content: space-evenly;
-    align-items: center;
+    padding: 60px; /* Preenchimento do nosso header, ou seja, o tamanho que ficará o header*/
+    align-items: center; /* Alinhar os itens ao centro*/
+    flex-wrap: wrap; /* Aqui informamos que os itens podem quebrar para se adaptar a telas menores. */
+    background-color: black;
 }
 
 .list-rodape {
@@ -67,16 +101,16 @@ a { /* Chamamos a nossa Tag a (Que está dentro do Header para estilização */
 
 .list-rodape li {
     margin-right: 20px;
-    list-style: none;
+    list-style: none; /* Usado para tirar os pontinhos de marcação */
 }
 
 .list-rodape li a {
     text-decoration: none;
-    color: red;
+    color: green;
     font-size: 20px;
 }
 
-.list-rodape a:hover {
+.list-rodape a:hover { /* Aqui chamamos os nomes que estão na LI, dentro da a, para estilização*/
     color: white;
     transition: 1s;
 }
