@@ -3,7 +3,7 @@
 *{ /* Esse início com asterisco serve pra definir o site inteiro, title, header, body, footer e etc... */
     margin: 0; /* esse elemento serve para zerar a margem que ja vem pré-definida*/
     padding: 0px; /* zerar o que já vem pré-definido*/
-    list-style: none;
+    list-style: none; /* tirar as marcações (as bolinhas), do texto*/
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
